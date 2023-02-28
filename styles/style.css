@@ -1,4 +1,11 @@
-
+@keyframes rotation{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -18,6 +25,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
   /* parameters for the header section */
 }
 .logo {
@@ -77,6 +85,8 @@
   position: absolute;
   top: 64px;
   right: 0;
+  transform: rotate(-15deg);
+  animation: rotation 20s linear infinite;
 }
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
@@ -142,13 +152,117 @@
   position: relative;
   width: 1100px;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   padding-bottom: 90px;
 }
+.techniques{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards{
+  position: relative;
+  width: 920px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-bottom: 90px;
+}
+.cards__image{
+  width: 160px;
+  border-radius: 50%;
+}
+.cards__item{
+  width: 240px;
+  margin: 30px;
+}
+.cards__title{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards__description{
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 570px;
+}
+.video__iframes{
+  width: auto;
+  height: 340px;
+  margin-top: 50px;
+  display: flex;
+}
+.video__iframe{
+  padding-left: 20px;
+}
+.oakley{
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+.khan__container{
+  width: 80%;
+}
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+}
+.khan__quote{
+  width: 790px;
+  padding-top: 50px;
+  padding-bottom: 36px;
+}
+.khan{
+  display: flex;
+  justify-content: center;
+  height: 1100px;
+}
+.khan__book-container{
+  display: flex;
+}
+.khan__buy-link{
+  padding-left: 48px;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
 
+}
+.khan__quote-author-subline{
+  padding-bottom: 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__author{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title{
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.khan__quote{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__quote-author{
+  line-height: 1.15px;
+  font-size: 24px;
+  font-weight: bold;
+}
 .table__cell{
   width: 250px;
 }
@@ -213,7 +327,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  padding-top:90px ;
+  padding-top:90px;
   padding-bottom: 20px;
 }
 .section__subtitle{
@@ -230,7 +344,7 @@
   position: absolute;
   right: -124px;
   z-index: 0;
-
+  animation: rotation 20s linear infinite;
 }
 .footer{
   min-height: 350px;
@@ -246,6 +360,21 @@
   top: 30px;
   left: 64px;
   z-index: 3;
+}
+.resources{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.resources__logo-zone{
+  position: relative;
+  width: 1100px;
+  padding-top: 80px;
+  padding-bottom: 217px;
+}
+.resources__logo{
+  width: 270px;
+  height: 38px;
 }
 .footer__columns{
   width: 90%;
