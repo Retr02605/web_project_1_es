@@ -1,0 +1,9 @@
+.logo__placer_footer{
+    width: auto;
+    width: 183px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    z-index: 3;
+  }
